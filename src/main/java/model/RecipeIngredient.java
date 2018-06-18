@@ -12,5 +12,16 @@ public class RecipeIngredient {
         this.id = id;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public Ingredient getIngredient() {
+        return ingredient;
+    }
+
+    public double getQuantity() {
+        return quantity;
+    }
 
 }

@@ -8,7 +8,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.List;
 
 public class RecipePostgresDaoImpl extends PostgresBaseDao implements RecipeDao{
 
@@ -40,10 +39,10 @@ public class RecipePostgresDaoImpl extends PostgresBaseDao implements RecipeDao{
         return results;
     }
 
-    public ArrayList<Recipe> findAll(Boolean ingredients) {
+    public ArrayList<Recipe> findAll(boolean showIngredients) {
         ArrayList<Recipe> recipes = selectRecipes("SELECT * FROM recept");
 
-        if(ingredients)
+        if(showIngredients)
         {
             for(Recipe recipe: recipes)
             {
@@ -55,8 +54,27 @@ public class RecipePostgresDaoImpl extends PostgresBaseDao implements RecipeDao{
         return recipes;
     }
 
-    public ArrayList<Recipe> findByIngredients(ArrayList<Ingredient> ingredients) {
-        return selectRecipes("SELECT * FROM recept");
+    public ArrayList<Recipe> findbyIngredients(ArrayList<Ingredient> ingredients,boolean showIngredients) {
+        ArrayList<Recipe> recipes = selectRecipes("SELECT * FROM recept WHERE ");
+        if(showIngredients)
+        {
+            for(Recipe recipe: recipes)
+            {
+                RecipeIngredientPostgresDaoImpl recipeIngredientPostgresDao= new RecipeIngredientPostgresDaoImpl();
+                recipe.setIngredients(recipeIngredientPostgresDao.findByRecipeId(recipe.getId()));
+            }
+        }
+        return recipes;
+    }
+
+    public Recipe findById(int id,boolean showIngredients) {
+        Recipe recipe = selectRecipes(String.format("SELECT * FROM recept WHERE id = (%d)",id)).get(0);
+        if(showIngredients) {
+            RecipeIngredientPostgresDaoImpl recipeIngredientPostgresDao = new RecipeIngredientPostgresDaoImpl();
+            recipe.setIngredients(recipeIngredientPostgresDao.findByRecipeId(recipe.getId()));
+        }
+
+        return recipe;
     }
 
 }

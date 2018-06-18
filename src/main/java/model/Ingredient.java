@@ -11,4 +11,12 @@ public class Ingredient {
         this.name = name;
         this.measuringUnit = measuringUnit;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public MeasuringUnit getMeasuringUnit() {
+        return measuringUnit;
+    }
 }
