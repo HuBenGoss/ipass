@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
-    <Resource name="jdbc/PostgresDS"
-        url="jdbc:postgresql://ec2-79-125-6-160.eu-west-1.compute.amazonaws.com:5432/d4235js315g98f?ssl=true%26sslfactory=org.postgresql.ssl.NonValidatingFactory"
-        driverClassName="org.postgresql.Driver" 
-        auth="Container"
-        type="javax.sql.DataSource"
-        username="eqegubxfglkhao"
-        password="ffbeb1ea8d91bb69f731b11f5637303b212730b6bcd6d78ce5c706482cbb558e" />
+    <!--<ResourceLink  name="jdbc/PostgresDS"-->
+        <!--global="jdbc/PostgresDS"-->
+        <!--url="jdbc:postgresql://ec2-79-125-6-160.eu-west-1.compute.amazonaws.com:5432/d4235js315g98f?ssl=true%26sslfactory=org.postgresql.ssl.NonValidatingFactory"-->
+        <!--driverClassName="org.postgresql.Driver" -->
+        <!--auth="Container"-->
+        <!--type="javax.sql.DataSource"-->
+        <!--username="eqegubxfglkhao"-->
+        <!--password="ffbeb1ea8d91bb69f731b11f5637303b212730b6bcd6d78ce5c706482cbb558e" />-->
 </Context>
