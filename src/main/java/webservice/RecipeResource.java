@@ -4,17 +4,13 @@ package webservice;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import com.sun.xml.internal.ws.util.QNameMap;
-import model.Ingredient;
+
 import model.Recipe;
 import model.RecipeIngredient;
 import model.UserIngredient;
 
 import javax.ws.rs.*;
-import javax.ws.rs.core.Context;
-import javax.ws.rs.core.MultivaluedHashMap;
-import javax.ws.rs.core.MultivaluedMap;
-import javax.ws.rs.core.UriInfo;
+
 import java.util.ArrayList;
 import java.util.Date;
 

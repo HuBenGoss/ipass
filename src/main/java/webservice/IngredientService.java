@@ -2,11 +2,10 @@ package webservice;
 
 
 import model.Ingredient;
-import model.UserIngredient;
+
 import persistence.IngredientDao;
 import persistence.IngredientPostgresDaoImpl;
-import persistence.UserIngredientDao;
-import persistence.UserIngredientPostgresDaoImpl;
+
 
 import java.util.ArrayList;
 
