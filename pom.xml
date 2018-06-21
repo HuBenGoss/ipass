@@ -122,18 +122,18 @@
                                 <artifactItem>
                                     <groupId>com.github.jsimone</groupId>
                                     <artifactId>webapp-runner</artifactId>
-                                    <version>9.0.8.0</version>
+                                    <version>8.5.11.3</version>
                                     <destFileName>webapp-runner.jar</destFileName>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.apache.tomcat</groupId>
                                     <artifactId>tomcat-dbcp</artifactId>
-                                    <version>9.0.8</version>
+                                    <version>8.0.33</version>
                                 </artifactItem>
                                 <artifactItem>
                                     <groupId>org.postgresql</groupId>
                                     <artifactId>postgresql</artifactId>
-                                    <version>42.2.2</version>
+                                    <version>9.4.1212</version>
                                 </artifactItem>
                             </artifactItems>
                         </configuration>
@@ -141,44 +141,5 @@
                 </executions>
             </plugin>
         </plugins>
-        <!--<pluginManagement>&lt;!&ndash; lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) &ndash;&gt;-->
-            <!--<plugins>-->
-                <!--<plugin>-->
-                    <!--<groupId>com.heroku.sdk</groupId>-->
-                    <!--<artifactId>heroku-maven-plugin</artifactId>-->
-                    <!--<version>2.0.3</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<artifactId>maven-clean-plugin</artifactId>-->
-                    <!--<version>3.0.0</version>-->
-                <!--</plugin>-->
-                <!--&lt;!&ndash; see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging &ndash;&gt;-->
-                <!--<plugin>-->
-                    <!--<artifactId>maven-resources-plugin</artifactId>-->
-                    <!--<version>3.0.2</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<artifactId>maven-compiler-plugin</artifactId>-->
-                    <!--<version>3.7.0</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<artifactId>maven-surefire-plugin</artifactId>-->
-                    <!--<version>2.20.1</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<artifactId>maven-jar-plugin</artifactId>-->
-                    <!--<version>3.0.2</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<artifactId>maven-install-plugin</artifactId>-->
-                    <!--<version>2.5.2</version>-->
-                <!--</plugin>-->
-                <!--<plugin>-->
-                    <!--<artifactId>maven-deploy-plugin</artifactId>-->
-                    <!--<version>2.8.2</version>-->
-                <!--</plugin>-->
-            <!--</plugins>-->
-
-        <!--</pluginManagement>-->
     </build>
 </project>
