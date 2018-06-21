@@ -8,7 +8,79 @@
   <component name="ChangeListManager">
     <list default="true" id="e6f7f3bb-0bb0-4370-997e-93d79ac16044" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PostgresBaseDao.java" afterPath="$PROJECT_DIR$/src/main/java/persistence/PostgresBaseDao.java" />
+      <change beforePath="$PROJECT_DIR$/Procfile" afterPath="$PROJECT_DIR$/Procfile" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/META-INF/MANIFEST.MF" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/model/Ingredient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/model/MeasuringUnit.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/model/Recipe.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/model/RecipeIngredient.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/model/Stock.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/model/User.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/persistence/IngredientPostgresDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/persistence/MeasuringUnitPostgresDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/persistence/PostgresBaseDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/persistence/RecipeDao.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/persistence/RecipeIngredientPostgresDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/persistence/RecipePostgresDaoImpl.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/webservice/RecipeResource.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/webservice/RecipeService.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/classes/webservice/ServiceProvider.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/activation-1.1.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/aopalliance-repackaged-2.5.0-b42.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/hk2-api-2.5.0-b42.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/hk2-locator-2.5.0-b42.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/hk2-utils-2.5.0-b42.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jackson-annotations-2.8.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jackson-core-2.8.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jackson-databind-2.8.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jackson-module-jaxb-annotations-2.8.10.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/javassist-3.22.0-CR2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/javax.annotation-api-1.2.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/javax.inject-1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/javax.inject-2.5.0-b42.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/javax.json-1.0.4.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/javax.ws.rs-api-2.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jaxb-api-2.2.11.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-client-2.26.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-common-2.26.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-container-servlet-2.26.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-container-servlet-core-2.26.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-entity-filtering-2.27.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-hk2-2.26.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-media-jaxb-2.26.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-media-json-jackson-2.27.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jersey-server-2.26.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/jjwt-0.9.0.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/WEB-INF/web.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/rebei_war_exploded/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/META-INF/heroku-context.xml" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/heroku-context.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Ingredient.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/Ingredient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/MeasuringUnit.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/MeasuringUnit.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Recipe.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/Recipe.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/RecipeIngredient.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/RecipeIngredient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Stock.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/Stock.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/User.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/UserIngredient.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/UserIngredient.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/IngredientDao.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/IngredientDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/IngredientPostgresDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/IngredientPostgresDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/MeasuringUnitPostgresDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/MeasuringUnitPostgresDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/PostgresBaseDao.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/PostgresBaseDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/RecipeDao.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/RecipeDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/RecipeIngredientDao.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/RecipeIngredientDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/RecipeIngredientPostgresDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/RecipeIngredientPostgresDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/RecipePostgresDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/RecipePostgresDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/UserIngredientDao.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/UserIngredientDao.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/persistence/UserIngredientPostgresDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/UserIngredientPostgresDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/IngredientResource.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/IngredientResource.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/IngredientService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/IngredientService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/RecipeIngredientService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/RecipeIngredientService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/RecipeResource.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/RecipeResource.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/RecipeService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/RecipeService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/ServiceProvider.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/ServiceProvider.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/webservice/UserIngredientService.java" afterPath="$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/UserIngredientService.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,7 +109,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="RecipeResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/RecipeResource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/RecipeResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -47,7 +119,7 @@
         </entry>
       </file>
       <file leaf-file-name="IngredientResource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/IngredientResource.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/IngredientResource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
@@ -59,7 +131,7 @@
         </entry>
       </file>
       <file leaf-file-name="IngredientService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/webservice/IngredientService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/IngredientService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -69,7 +141,7 @@
         </entry>
       </file>
       <file leaf-file-name="heroku-context.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/META-INF/heroku-context.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/heroku-context.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -79,10 +151,10 @@
         </entry>
       </file>
       <file leaf-file-name="PostgresBaseDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/persistence/PostgresBaseDao.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/PostgresBaseDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="374">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -108,21 +180,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Procfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Procfile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+              <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -170,7 +252,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/FullRecipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/Recipe.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/RecipeIngredient.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/MeasuringUnitPostgresDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/RecipeIngredientPostgresDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/RecipeIngredientDao.java" />
@@ -206,8 +287,9 @@
         <option value="$PROJECT_DIR$/src/main/META-INF/context-heroku.xml" />
         <option value="$PROJECT_DIR$/src/main/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/src/main/java/persistence/PostgresBaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -233,7 +315,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1770" />
+    <option name="width" value="1231" />
     <option name="height" value="1407" />
   </component>
   <component name="ProjectView">
@@ -283,30 +365,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rebei" type="b2602c69:ProjectViewProjectNode" />
               <item name="rebei" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="persistence" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rebei" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rebei" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="webservice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rebei" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rebei" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rebei" type="b2602c69:ProjectViewProjectNode" />
@@ -322,6 +381,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rebei" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rebei" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="rebei" type="b2602c69:ProjectViewProjectNode" />
@@ -389,8 +456,8 @@
       <recent name="webservice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Documenten\Hu\rebei\src\main\webapp\img" />
       <recent name="D:\Documenten\Hu\rebei\src\main\webapp" />
+      <recent name="D:\Documenten\Hu\rebei\src\main\webapp\img" />
       <recent name="D:\Documenten\Hu\rebei\src\main\webapp\style" />
       <recent name="D:\Documenten\Hu\rebei\src\main\webapp\js" />
       <recent name="D:\Documenten\Hu\rebei\src\main\java" />
@@ -646,7 +713,7 @@
       <workItem from="1529314862899" duration="23671000" />
       <workItem from="1529423748955" duration="13457000" />
       <workItem from="1529489894405" duration="7601000" />
-      <workItem from="1529575504619" duration="10837000" />
+      <workItem from="1529575504619" duration="11453000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1529314953370</created>
@@ -739,28 +806,35 @@
       <option name="project" value="LOCAL" />
       <updated>1529592120960</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Initial">
+      <created>1529592701300</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1529592701300</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55566000" />
+    <option name="totallyTimeSpent" value="56182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1770" height="1407" extended-state="0" />
+    <frame x="-7" y="0" width="1231" height="1407" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.49671593" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28207108" sideWeight="0.28107184" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28207108" sideWeight="0.28230453" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982674" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28207108" sideWeight="0.71892816" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28207108" sideWeight="0.7176955" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26111746" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40246913" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -798,25 +872,18 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/postgresql/postgresql/42.2.2/postgresql-42.2.2.jar!/org/postgresql/jdbc/PgStatement.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/ServiceProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/ServiceProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <element signature="e#178#179#0" expanded="false" />
-            <element signature="e#228#229#0" expanded="false" />
-            <element signature="e#261#262#0" expanded="false" />
-            <element signature="e#331#332#0" expanded="false" />
-            <element signature="e#374#375#0" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <element signature="e#481#482#0" expanded="false" />
+            <element signature="e#175#176#0" expanded="false" />
+            <element signature="e#225#226#0" expanded="false" />
+            <element signature="e#258#259#0" expanded="false" />
+            <element signature="e#328#329#0" expanded="false" />
+            <element signature="e#371#372#0" expanded="false" />
+            <element signature="e#437#438#0" expanded="false" />
+            <element signature="e#478#479#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -842,7 +909,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/UserIngredientPostgresDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/UserIngredientPostgresDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="27" column="70" lean-forward="false" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="70" />
@@ -850,17 +917,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/RecipeIngredientPostgresDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/RecipeIngredientPostgresDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding>
-            <element signature="e#483#501#0" expanded="false" />
+            <element signature="e#547#565#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/RecipeIngredientDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/RecipeIngredientDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
@@ -1028,7 +1095,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/RecipeIngredientService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/RecipeIngredientService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
@@ -1068,49 +1135,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/IngredientPostgresDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/IngredientPostgresDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#455#467#0" expanded="false" />
+            <element signature="e#462#474#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/RecipeIngredient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/RecipeIngredient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#435#436#0" expanded="false" />
-            <element signature="e#470#471#0" expanded="false" />
-            <element signature="e#501#502#0" expanded="false" />
+            <element signature="e#464#465#0" expanded="false" />
+            <element signature="e#499#500#0" expanded="false" />
+            <element signature="e#530#531#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Ingredient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/model/Ingredient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#491#492#0" expanded="false" />
+            <element signature="e#520#521#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/RecipePostgresDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/RecipePostgresDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
-            <element signature="e#431#439#0" expanded="false" />
+            <element signature="e#493#501#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/RecipeService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/RecipeService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
@@ -1149,7 +1216,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/RecipeResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/RecipeResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
@@ -1157,7 +1224,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/IngredientResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/IngredientResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="false" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
@@ -1167,7 +1234,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/webservice/IngredientService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/webservice/IngredientService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -1183,7 +1250,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/META-INF/heroku-context.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/heroku-context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
@@ -1191,26 +1258,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/persistence/PostgresBaseDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nl/caspingium/projects/rebei/persistence/PostgresBaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="6" lean-forward="false" selection-start-line="49" selection-start-column="6" selection-end-line="49" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="54" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="33" lean-forward="false" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
           <folding />
         </state>
       </provider>
