@@ -10,7 +10,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecipeIngredientPostgresDaoImpl extends PostgresBaseDao{
+public class RecipeIngredientPostgresDaoImpl extends PostgresBaseDao implements RecipeIngredientDao{
 
 
     private ArrayList<RecipeIngredient> selectIngredients(String query){
@@ -22,18 +22,19 @@ public class RecipeIngredientPostgresDaoImpl extends PostgresBaseDao{
             ResultSet dbResultSet = stmt.executeQuery(query);
 
             while (dbResultSet.next()) {
-                String name = dbResultSet.getString("naam");
                 int id = dbResultSet.getInt("id");
                 double quantity = dbResultSet.getDouble("hoeveelheid");
+                int ingredientId = dbResultSet.getInt("ingrediëntid");
 
-                IngredientPostgresDaoImpl ingredientPostgresDao= new IngredientPostgresDaoImpl();
-                Ingredient ingredient = ingredientPostgresDao.findById(id);
+                IngredientPostgresDaoImpl ingredientPostgresDao = new IngredientPostgresDaoImpl();
+                Ingredient ingredient = ingredientPostgresDao.findById(ingredientId);
 
                 RecipeIngredient recipeIngredient = new RecipeIngredient(id,ingredient,quantity);
 
                 ingredients.add(recipeIngredient);
             }
 
+            connection.close();
         }
         catch (SQLException sqlE) {
             sqlE.printStackTrace();
@@ -44,11 +45,15 @@ public class RecipeIngredientPostgresDaoImpl extends PostgresBaseDao{
 
     public ArrayList<RecipeIngredient> findAll() {
 
-        return selectIngredients("SELECT * FROM ingrediënt");
+        return selectIngredients("SELECT * FROM \"recept-ingrediënt\"");
     }
 
     public ArrayList<RecipeIngredient> findByRecipeId(int id) {
-        return selectIngredients(String.format("SELECT * FROM WHERE receptid = (%d);",id));
+        return selectIngredients(String.format("SELECT \"recept-ingrediënt\".id,ingrediënt.id AS ingrediëntid,\"recept-ingrediënt\".hoeveelheid FROM \"recept-ingrediënt\" INNER JOIN ingrediënt ON \"recept-ingrediënt\".ingrediëntid=ingrediënt.id WHERE receptid = %d;",id));
+    }
+
+    public RecipeIngredient findById(int id) {
+        return selectIngredients(String.format("SELECT \"recept-ingrediënt\".id,ingrediënt.id AS ingrediëntid,\"recept-ingrediënt\".hoeveelheid FROM \"recept-ingrediënt\" INNER JOIN ingrediënt ON \"recept-ingrediënt\".ingrediëntid=ingrediënt.id WHERE id = %d;",id)).get(0);
     }
 
 }

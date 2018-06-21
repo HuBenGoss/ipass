@@ -1,0 +1,19 @@
+<div class="col select-base">
+    <div class="form-group">
+        <label>Ingredient</label>
+        <select class="form-control ingredientsField" data-value="selectedItem" data-template-bind='{"attribute": "options", "value": {"data": "options", "value":"id", "content":"name"}}'>
+        </select>
+    </div>
+</div>
+<div class="col number-base">
+    <div class="form-group">
+        <label>Aantal</label>
+        <input step=".01"  type="number" class="form-control ingredientsField" data-value="quantity">
+    </div>
+</div>
+<div class='check-box-base remove-base'>
+    <div class="form-group">
+        <label><i class="fas fa-ban"></i></label>
+        <input type="checkbox" class="form-control removeField">
+    </div>
+</div>

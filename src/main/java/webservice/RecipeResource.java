@@ -1,66 +1,130 @@
 package webservice;
 
 
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.sun.xml.internal.ws.util.QNameMap;
 import model.Ingredient;
 import model.Recipe;
 import model.RecipeIngredient;
+import model.UserIngredient;
 
-import javax.json.Json;
-import javax.json.JsonArray;
-import javax.json.JsonArrayBuilder;
-import javax.json.JsonObjectBuilder;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MultivaluedHashMap;
+import javax.ws.rs.core.MultivaluedMap;
+import javax.ws.rs.core.UriInfo;
+import java.util.ArrayList;
+import java.util.Date;
 
 @Path("/recipes")
 public class RecipeResource {
-    private RecipeService service = ServiceProvider.getRecipeService();
+    private RecipeService recipeService = ServiceProvider.getRecipeService();
+    private IngredientService ingredientService = ServiceProvider.getIngredientService();
 
-    private JsonObjectBuilder jobRecipe(Recipe recipe)
+    private JsonObject jobRecipe(Recipe recipe,boolean showIngredients)
     {
-        JsonObjectBuilder job = Json.createObjectBuilder();
+        JsonObject recipeObject = new JsonObject();
         try {
-            job.add("title",recipe.getTitle());
-            job.add("cookingTime",recipe.getCookingTime());
-            job.add("getDescription",recipe.getDescription());
-            job.add("getDescription",recipe.getDescription());
+            recipeObject.addProperty("id",recipe.getId());
+            recipeObject.addProperty("title",recipe.getTitle());
+            recipeObject.addProperty("cookingTime",recipe.getCookingTime());
+            recipeObject.addProperty("description",recipe.getDescription());
 
-            for(RecipeIngredient recipeIngredient: recipe.getIngredients())
-            {
-                job.add("ingredients",jobIngredient(recipeIngredient));
+            if(showIngredients) {
+                JsonObject ingredientObject = new JsonObject();
+                for (RecipeIngredient recipeIngredient : recipe.getIngredients()) {
+                    StringBuilder sb = new StringBuilder();
+                    sb.append("");
+                    sb.append(recipeIngredient.getId());
+                    ingredientObject.add(sb.toString(), jobIngredient(recipeIngredient));
+                }
+
+                recipeObject.add("ingredients", ingredientObject);
             }
-            return job;
+            return recipeObject;
         }catch (NullPointerException ex){
             ex.printStackTrace();
-            return job;
+            return recipeObject;
         }
     }
 
-    private JsonObjectBuilder jobIngredient(RecipeIngredient ingredient)
+    private JsonObject jobIngredient(RecipeIngredient ingredient)
     {
-        JsonObjectBuilder job = Json.createObjectBuilder();
+        JsonObject ingredientObject = new JsonObject();
+
         try {
-            job.add("name",ingredient.getIngredient().getName());
-            job.add("quantity",ingredient.getQuantity());
-            job.add("measuringUnit",ingredient.getIngredient().getMeasuringUnit().getName());
-            return job;
+            ingredientObject.addProperty("name",ingredient.getIngredient().getName());
+            ingredientObject.addProperty("quantity",ingredient.getQuantity());
+            ingredientObject.addProperty("measuringUnit",ingredient.getIngredient().getMeasuringUnit().getName());
+
+            return ingredientObject;
+
         }catch (NullPointerException ex){
             ex.printStackTrace();
-            return job;
+
+            return ingredientObject;
         }
     }
 
     @GET
     @Produces("application/json")
     public String getRecipes(){
-        JsonArrayBuilder jab = Json.createArrayBuilder();
+        JsonArray  recipeArray = new JsonArray();
 
-        for (Recipe recipe : service.getAllRecipes())
+        for (Recipe recipe : recipeService.getAllRecipes())
         {
-            jab.add(jobRecipe(recipe));
+            recipeArray.add(jobRecipe(recipe,false));
         }
-        JsonArray array = jab.build();
-        return array.toString();
+        return recipeArray.toString();
     }
+
+    @GET
+    @Path("recipe")
+    @Produces("application/json")
+    public String getRecipesByIngredients(@QueryParam("ingredients") String searchIngredients){
+
+
+        ArrayList<UserIngredient> ingredients = new ArrayList<>();
+
+        JsonArray searchIngredient = new Gson().fromJson(searchIngredients,JsonArray.class);
+        for (Object item : searchIngredient)
+        {
+            if( item instanceof JsonObject) {
+                JsonObject jsonObject = (JsonObject) item;
+                ingredients.add(new UserIngredient(0,ingredientService.getIngredientById(jsonObject.get("ingredient").getAsInt()),jsonObject.get("quantity").getAsDouble(),new Date()));
+
+            }
+        }
+//
+//        for (String key : queryParams.keySet()) {
+//            ingredients.add(new UserIngredient(0,ingredientService.getIngredientById(Integer.parseInt(key.replaceAll("\\D",""))),Double.parseDouble(queryParams.get(key).toString().replaceAll("\\D","")),new Date()));
+//        }
+
+        JsonArray  recipeArray = new JsonArray();
+
+        for (Recipe recipe : recipeService.getRecipeByIngredients(ingredients))
+        {
+            recipeArray.add(jobRecipe(recipe,false));
+        }
+
+        return recipeArray.toString();
+    }
+
+    @GET
+    @Path("recipe/{id}")
+    @Produces("application/json")
+    public String getRecipesById(@PathParam("id") int id){
+
+        JsonArray  recipeArray = new JsonArray();
+
+        Recipe recipe = recipeService.getRecipeById(id);
+
+        recipeArray.add(jobRecipe(recipe,true));
+
+        return recipeArray.toString();
+    }
+
+
 }

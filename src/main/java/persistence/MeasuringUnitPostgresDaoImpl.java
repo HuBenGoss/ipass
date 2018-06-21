@@ -25,6 +25,9 @@ public class MeasuringUnitPostgresDaoImpl extends PostgresBaseDao{
                 measuringUnits.add(new MeasuringUnit(id,name));
             }
 
+            connection.close();
+
+
         }
         catch (SQLException sqlE) {
             sqlE.printStackTrace();

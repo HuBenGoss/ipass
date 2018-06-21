@@ -1,0 +1,115 @@
+body {
+  background: #fff url("http://dev.munfactory.com/cookbook/images/pattern.png") repeat; }
+
+header {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 3px 3px 0px #bfbfbf;
+  box-shadow: 0px 3px 3px 0px #a2a2a2;
+  position: relative;
+  z-index: 10;
+  padding: 30px 0; }
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  background: #ffffff;
+  margin-top: -3px;
+  z-index: 1;
+  -webkit-border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 20px 20px;
+  font-family: 'Bitter', serif;
+  font-size: 18px;
+  text-transform: uppercase; }
+  .menu ul li {
+    border-bottom: 1px dashed #bfbfbf;
+    margin: 0;
+    display: block; }
+    .menu ul li a {
+      height: 73px;
+      color: #b2b2b2;
+      padding: 23px 0 23px 20px;
+      display: block; }
+      .menu ul li a i {
+        height: 74px;
+        color: #ffffff;
+        font-size: 32px;
+        float: right;
+        background-color: #ffe616;
+        padding: 23px 23px;
+        margin-top: -23px;
+        border-bottom: 1px dashed #bfbfbf; }
+        .menu ul li a i.fas.fa-th-list {
+          padding: 23px 23px 23px 19px; }
+        .menu ul li a i.fas.fa-utensils {
+          padding: 23px 23px 23px 25px; }
+        .menu ul li a i.fas.fa-sign-out-alt {
+          padding: 23px 23px 23px 19px; }
+        .menu ul li a i:last-child {
+          height: 73px;
+          border-bottom: none; }
+      .menu ul li a:hover, .menu ul li a:focus {
+        background-color: #e6e6e6;
+        cursor: pointer; }
+        .menu ul li a:hover i, .menu ul li a:focus i {
+          background-color: #e2ca00; }
+    .menu ul li:last-child {
+      border-bottom: none; }
+      .menu ul li:last-child a {
+        border-radius: 0px 0px 20px 20px; }
+        .menu ul li:last-child a i {
+          border-radius: 0px 0px 20px 0; }
+
+.recipe-list {
+  background: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 2px #d9d9d9;
+  box-shadow: 0px 2px 2px #d9d9d9;
+  padding: 20px;
+  margin: 40px 0 80px; }
+  .recipe-list .post {
+    padding: 20px 0;
+    border-bottom: 1px dashed #e5e5e5;
+    height: 140px; }
+    .recipe-list .post:last-child {
+      border-bottom: none; }
+    .recipe-list .post div {
+      height: 100%;
+      float: left; }
+      .recipe-list .post div.thumbnail {
+        width: 30%;
+        padding-right: 20px; }
+        .recipe-list .post div.thumbnail img {
+          height: 100%; }
+      .recipe-list .post div.content {
+        width: 42%;
+        position: relative;
+        z-index: 1;
+        padding-right: 10px; }
+      .recipe-list .post div.meta {
+        width: 28%;
+        padding: 20px 0 20px 20px;
+        border-left: 1px solid #e5e5e5;
+        color: #b2b2b2;
+        position: relative; }
+        .recipe-list .post div.meta .time-title {
+          margin-right: 10px; }
+
+.modal-dialog {
+  margin-top: 0; }
+  .modal-dialog .modal-content {
+    border: 0;
+    border-radius: 0 0 20px 20px; }
+    .modal-dialog .modal-content div {
+      border: 0; }
+
+.remove-base .form-group label {
+  color: red; }
+.remove-base .form-group .removeField {
+  height: 31px; }
+
+/*# sourceMappingURL=style.css.map */

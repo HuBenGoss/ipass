@@ -1,0 +1,21 @@
+.modal-dialog {
+  margin-top: 0;
+  .modal-content {
+    border: 0;
+    border-radius: 0 0 20px 20px;
+    div{
+      border: 0;
+    }
+  }
+}
+
+.remove-base{
+  .form-group {
+    label {
+      color: red;
+    }
+    .removeField{
+      height: 31px;
+    }
+  }
+}

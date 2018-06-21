@@ -10,7 +10,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class IngredientPostgresDaoImpl extends PostgresBaseDao {
+public class IngredientPostgresDaoImpl extends PostgresBaseDao implements IngredientDao{
 
     private ArrayList<Ingredient> selectIngredients(String query){
 
@@ -23,18 +23,21 @@ public class IngredientPostgresDaoImpl extends PostgresBaseDao {
             while (dbResultSet.next()) {
                 String name = dbResultSet.getString("naam");
                 int id = dbResultSet.getInt("id");
-                int measuringUnitId = dbResultSet.getInt("eenheid");
+//                int measuringUnitId = dbResultSet.getInt("eenheidid");
 
-                MeasuringUnit measuringUnit = null;
-                for (MeasuringUnit measuringUnitLoop :MeasuringUnitPostgresDaoImpl.measuringUnits) {
-                    if (measuringUnitLoop.getId() == measuringUnitId) {
-                        measuringUnit = measuringUnitLoop;
-                        break;
-                    }
-                }
+//                MeasuringUnit measuringUnit = null;
+//                for (MeasuringUnit measuringUnitLoop :MeasuringUnitPostgresDaoImpl.measuringUnits) {
+//                    if (measuringUnitLoop.getId() == measuringUnitId) {
+//                        measuringUnit = measuringUnitLoop;
+//                        break;
+//                    }
+//                }
 
-                ingredients.add(new Ingredient(id,name,measuringUnit));
+                ingredients.add(new Ingredient(id,name,/*measuringUnit*/null));
             }
+
+            connection.close();
+
 
         }
         catch (SQLException sqlE) {
@@ -50,7 +53,11 @@ public class IngredientPostgresDaoImpl extends PostgresBaseDao {
     }
 
     public Ingredient findById(int id) {
-        return selectIngredients(String.format("SELECT * FROM ingrediënt WHERE id=(%d)",id)).get(0);
+        return selectIngredients(String.format("SELECT * FROM ingrediënt WHERE id=%d",id)).get(0);
+    }
+
+    public Ingredient findByName(String name) {
+        return selectIngredients("SELECT * FROM ingrediënt WHERE naam LIKE '%"+name+"%'").get(0);
     }
 
 }

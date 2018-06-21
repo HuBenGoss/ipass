@@ -19,4 +19,8 @@ public class Ingredient {
     public MeasuringUnit getMeasuringUnit() {
         return measuringUnit;
     }
+
+    public int getId() {
+        return id;
+    }
 }
