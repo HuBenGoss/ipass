@@ -9,4 +9,7 @@ public interface RecipeDao {
     ArrayList<Recipe> findAll(boolean showIngredients);
     ArrayList<Recipe> findbyIngredients(ArrayList<UserIngredient> ingredients, boolean showIngredients);
     Recipe findById(int id,boolean showIngredients);
+    boolean update(Recipe recipe);
+    boolean save(Recipe recipe);
+    boolean delete(Recipe recipe);
 }

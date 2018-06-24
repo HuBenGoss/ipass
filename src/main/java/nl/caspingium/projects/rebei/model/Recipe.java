@@ -7,19 +7,20 @@ public class Recipe {
     private int id;
 
     private String title;
-    private double cookingTime;
-    private String description;
+    private int cookingTime;
 
     private ArrayList<RecipeIngredient> ingredients;
+    private ArrayList<Step> steps;
+    private byte[] imageData;
     private User writer;
 
-    public Recipe(int id, String title, double cookingTime, User writer,String description) {
+    public Recipe(int id, String title, int cookingTime, User writer,byte[] imageData) {
         this.id = id;
         this.title = title;
         this.cookingTime = cookingTime;
         this.ingredients = new ArrayList<RecipeIngredient>();
         this.writer = writer;
-        this.description = description;
+        this.imageData = imageData;
     }
 
     public void addIngredient(RecipeIngredient recipeIngredient) {
@@ -38,19 +39,35 @@ public class Recipe {
         return title;
     }
 
-    public double getCookingTime() {
+    public int getCookingTime() {
         return cookingTime;
-    }
-
-    public String getDescription() {
-        return description;
     }
 
     public ArrayList<RecipeIngredient> getIngredients() {
         return ingredients;
     }
 
+    public ArrayList<Step> getSteps() {
+        return steps;
+    }
+
+    public void setSteps(ArrayList<Step> steps) {
+        this.steps = steps;
+    }
+
+    public void addStep(Step step) {
+        this.steps.add(step);
+    }
+
     public User getWriter() {
         return writer;
+    }
+
+    public byte[] getImageData() {
+        return imageData;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

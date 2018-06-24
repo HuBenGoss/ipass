@@ -112,4 +112,40 @@ header {
 .remove-base .form-group .removeField {
   height: 31px; }
 
+body {
+  counter-reset: item; }
+
+.recipe-block {
+  padding: 20px 0; }
+  .recipe-block img {
+    width: 100%; }
+  .recipe-block div .ingredients {
+    max-width: 578px;
+    border: solid 1px #b2b2b2;
+    background: url("/img/ingredients-bg.png") repeat-y; }
+    .recipe-block div .ingredients li {
+      padding-left: 40px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 23px;
+      color: grey; }
+  .recipe-block div .steps {
+    list-style: none; }
+    .recipe-block div .steps li {
+      counter-increment: item;
+      padding: 13px 0; }
+      .recipe-block div .steps li:before {
+        margin-right: 10px;
+        content: counter(item);
+        background: #fff0;
+        border-radius: 100%;
+        color: #aaa3a3;
+        width: 1.2em;
+        text-align: center;
+        display: inline-block;
+        border: 3px solid #939393;
+        padding: 3px 23px 8px 13px;
+        font-size: 19px;
+        font-weight: bold; }
+
 /*# sourceMappingURL=style.css.map */

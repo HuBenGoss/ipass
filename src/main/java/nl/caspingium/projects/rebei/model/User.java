@@ -9,7 +9,7 @@ public class User {
     private String email;
 
     private int role;
-    private ArrayList<Stock>stock;
+    private ArrayList<UserIngredient>stock;
 
     public User(String firstName, String lastName, String email, int role) {
         this.firstName = firstName;
@@ -19,7 +19,7 @@ public class User {
         this.stock = new ArrayList<>();
     }
 
-    public void addStock(Stock stock) {
+    public void addStock(UserIngredient stock) {
         this.stock.add(stock);
     }
 }

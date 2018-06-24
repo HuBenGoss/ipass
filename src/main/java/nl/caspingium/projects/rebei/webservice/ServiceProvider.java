@@ -14,4 +14,7 @@ public class ServiceProvider {
 	public static UserIngredientService getUserIngredientService() {
 		return new UserIngredientService();
 	}
+	public static StepService getStepService() {
+		return new StepService();
+	}
 }

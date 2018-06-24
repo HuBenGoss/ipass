@@ -1,12 +1,13 @@
 function addRecipe(title,cookingTime,id) {
     var data = [
         {
-            image: "http://dev.munfactory.com/cookbook/images/steak-with-potatoes.jpg",
+            image: "http://via.placeholder.com/510x300",
             imagealt: title,
             title: title,
             cookingTime: cookingTime,
             pagelink:"",
-            urltext:"verder lezen →"
+            urltext:"verder lezen →",
+            pagelink:"/recipe.html?id="+id
         }
     ];
 
@@ -15,7 +16,11 @@ function addRecipe(title,cookingTime,id) {
     $("#post-"+id).loadTemplate("templates/recipe.html",data);
 
 
+
+
+
 }
+
 function loadRecipes() {
     console.log("loading Recipes");
     $('.recipe-list').children('.post').each(function () {

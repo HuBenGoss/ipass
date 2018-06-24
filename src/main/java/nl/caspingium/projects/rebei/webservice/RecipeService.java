@@ -28,4 +28,17 @@ public class RecipeService {
     public ArrayList<Recipe> getRecipeByIngredients(ArrayList<UserIngredient> ingredients) {
         return dao.findbyIngredients(ingredients,false);
     }
+
+    public boolean delete(Recipe recipe) {
+        return dao.delete(recipe);
+    }
+
+    public boolean save(Recipe recipe) {
+        boolean save = dao.save(recipe);
+        return save;
+    }
+
+    public boolean update(Recipe recipe) {
+        return dao.update(recipe);
+    }
 }
