@@ -131,7 +131,7 @@ public class RecipeResource {
 
         JsonArray recipeArray = new JsonArray();
 
-        if(searchIngredients ==null) {
+        if(searchIngredients != null) {
             ArrayList<UserIngredient> ingredients = new ArrayList<>();
 
             JsonArray searchIngredient = new Gson().fromJson(searchIngredients, JsonArray.class);
@@ -151,9 +151,6 @@ public class RecipeResource {
             for (Recipe recipe : recipeService.getRecipeByIngredients(ingredients)) {
                 recipeArray.add(jobRecipe(recipe, false));
             }
-        }
-        for(Recipe recipe : recipeService.getAllRecipes()) {
-            recipeArray.add(jobRecipe(recipe, false));
         }
 
         return recipeArray.toString();
